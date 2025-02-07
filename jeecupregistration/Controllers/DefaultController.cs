@@ -17,5 +17,9 @@ namespace jeecupregistration.Controllers
         {
             return View();
         }
+        public ActionResult About()
+        {
+            return View();
+        }
     }
 }
