@@ -1,0 +1,46 @@
+﻿ 
+@{
+    ViewBag.Title = "Registration";
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+
+<h2>Registration</h2>
+<link href="~/Content/registration.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="~/Content/JS/regform.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<form class="row g-3 regis">
+    <h2 style="text-align:center;color:blue; padding-top:25px;">Registration Form</h2>
+    <hr />
+    <h3 style="color:blue;">Personal Details</h3>
+    <hr />
+
+    <div class="col-md-6">
+        <label for="inputName" class="form-label">Name :</label>
+        <input type="text" class="form-control" id="inputname" placeholder="Candidate Name">
+    </div>
+    <div class="col-md-6">
+        <label for="fathername" class="form-label">Father Name :</label>
+        <input type="text" class="form-control" id="fathername" placeholder="Father Name">
+    </div>
+    <div class="col-md-6">
+        <label for="mothername" class="form-label">Mother Name :</label>
+        <input type="text" class="form-control" id="mothername" placeholder="Mother Name">
+    </div>
+    <div class="col-md-4">
+        <label for="date" class="form-label">Date</label>
+        <input type="date" class="form-control" id="date">
+    </div>
+    <div class="col-md-4">
+        <label for="inputdate" class="form-label">Gender</label>
+        <select id="gender" class="form-select">
+            <option>Choose...</option>
+            <option  value="Male" id="gender" selected>Male</option>
+            <option value="Female" id="gender">Female</option>
+        </select>
+    </div>
+    <div class="col-12">
+        <button type="button" class="btn btn-primary" onclick="SubmitForm()">Sign in</button>
+    </div>
+</form>
